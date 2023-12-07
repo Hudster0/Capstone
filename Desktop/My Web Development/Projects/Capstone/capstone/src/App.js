@@ -18,6 +18,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>
+<section className="sectionTwo">
+<h1>This is what a modern website would look like...</h1>
+<h2>Embrace the change!</h2>
+
+</section>
+
+      </body>
     </div>
   );
 }
