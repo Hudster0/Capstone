@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  padding:0%;
-  margin:0%;
 }
 
 .App-logo {
@@ -63,4 +61,35 @@
 .navMenu ul li a {
    text-decoration: none;
 
+}
+.hero {
+
+      display: flex;
+  justify-content:space-evenly;
+    background-color: rgb(173, 230, 178);
+    height: 25rem;
+}
+
+.heroInfo{
+  display:inline-block;
+  margin-top: 5%;
+}
+.highlight{
+     display: flex;
+  justify-content:space-between ;
+    background-color: rgb(204, 173, 230);
+    height: 25rem;
+}
+
+.testimonial{
+   display: flex;
+  justify-content:space-between ;
+    background-color: rgb(218, 134, 96);
+    height: 25rem;
+}
+.about{
+     display: flex;
+  justify-content:space-between ;
+    background-color: rgb(97, 82, 226);
+    height: 25rem;
 }
