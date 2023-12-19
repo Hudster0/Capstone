@@ -78,9 +78,21 @@
      display: flex;
   justify-content:space-between ;
     background-color: rgb(204, 173, 230);
-    height: 25rem;
 }
 
+img{
+  height:auto;
+  max-width: 50%;
+}
+
+.middle-img{
+    height:auto;
+  max-width: 30%;
+}
+.container {
+display:flex;
+  justify-content:space-between;
+}
 .testimonial{
    display: flex;
   justify-content:space-between ;
