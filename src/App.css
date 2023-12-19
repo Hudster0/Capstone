@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding:0%;
+  margin:0%;
 }
 
 .App-logo {
@@ -35,4 +37,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Top{
+    display: flex;
+  justify-content:space-between ;
+    background-color: lightblue;
+    height: 100px;
+}
+
+.navMenu{
+ display:flex;
+ justify-content:space-evenly;
+ padding: 14px 15px;
+ margin: 20px;
+ width:100%;
+}
+
+.navMenu ul li {
+   list-style-type: none;
+   color:black;
+}
+
+.navMenu ul li a {
+   text-decoration: none;
+
 }
