@@ -37,97 +37,94 @@
   }
 }
 
-
-.Top{
-    display: flex;
-  justify-content:space-between ;
-    background-color: rgb(255, 255, 255);
-    height: 100px;
+.Top {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 100px;
 }
 
-.navMenu{
- display:flex;
- justify-content:space-evenly;
- padding: 14px 15px;
- margin: 20px;
- width:100%;
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 14px 15px;
+  margin: 20px;
+  width: 100%;
 }
 
 .navMenu ul li {
-   list-style-type: none;
-   color:black;
+  list-style-type: none;
+  color: black;
 }
 
 .navMenu ul li a {
-   text-decoration: none;
-
+  text-decoration: none;
 }
 .hero {
-
-      display: flex;
-  justify-content:space-evenly;
-    background-color: rgb(194, 235, 184);
-    height: 25rem;
-    padding-bottom: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(194, 235, 184);
+  height: 25rem;
+  padding-bottom: 25rem;
 }
-.hero h1{
+.hero h1 {
   font-size: 8rem;
 }
-.heroInfo{
-  display:inline-block;
+.heroInfo {
+  display: inline-block;
   margin-top: 5%;
 }
-.together{
-  display:inline-block;
+.together {
+  display: inline-block;
 }
-.highlight{
-     display: flex;
-  justify-content:space-between;
-    background-color: rgb(255, 255, 255);
-     font-size: 2rem;
-     padding:4rem;
+.highlight {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 4rem;
 }
 .highlight h1 {
   font-size: 8rem;
 }
 
-img{
-  height:auto;
+img {
+  height: auto;
   max-width: 50%;
   justify-content: center;
 }
 
-.middle-img{
-    height:auto;
+.middle-img {
+  height: auto;
   max-width: 30%;
 }
-.container{
+.container {
   padding-bottom: 5rem;
   text-align: center;
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
 .card {
   display: grid;
-  justify-content:space-between;
-  border:solid;
+  justify-content: space-between;
+  border: solid;
 }
-.testimonial{
-   display: flex;
-  justify-content:space-between ;
-    background-color: rgb(255, 237, 138);
-    height: 25rem;
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 237, 138);
+  height: 25rem;
 }
-.about{
-     display: flex;
-  justify-content:space-between ;
-    background-color: rgb(255, 255, 255);
-    height: 25rem;
+.about {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 25rem;
 }
 
-.footer{
+.footer {
   background-color: rgb(120, 136, 91);
-  padding:3rem;
+  padding: 3rem;
   text-align: left;
 }
