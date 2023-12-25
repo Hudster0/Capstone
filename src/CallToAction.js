@@ -1,7 +1,6 @@
 function Hero() {
   return (
     <>
-      <h1>This is the jumbotron section aka hero section.</h1>
       <hero class="hero">
         <heroInfo class="heroInfo">
           <h1>Little Lemon</h1>

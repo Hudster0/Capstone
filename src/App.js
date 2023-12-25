@@ -1,5 +1,7 @@
+import React from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout"; // Import the Layout component
 import Nav from "./Nav";
 import BookPage from "./BookingPage";
 import Hero from "./CallToAction";
@@ -10,22 +12,19 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <>
-      <div>
+    <Router>
+      <Layout>
+        <Nav />
         <Routes>
           <Route path="/Chicago" element={<About />} />
-          <Route path="/booking" element={<BookPage />} />
-          {/* Add more routes for other pages */}
+          <Route path="/BookingPage" element={<BookPage />} />
         </Routes>
-      </div>
-      <Nav />
+      </Layout>
       <Hero />
       <Specials />
       <Testimonials />
-      <BookPage/>
-      <About />
       <Footer />
-    </>
+    </Router>
   );
 }
 

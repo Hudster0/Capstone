@@ -1,7 +1,6 @@
 function Specials() {
   return (
     <>
-      <h1>This is the Specials Menu where it gets updated every week.</h1>
       <highlight class="highlight">
         <div class="together">
           <h1>Special</h1>

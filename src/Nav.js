@@ -6,24 +6,15 @@ function Nav() {
         src="https://cdn.dribbble.com/userupload/4149863/file/original-b59dcb3c6b4dcb6f87e9dc0b9a0e5a23.png"
         alt="little-lemon logo"
       />
-      <ul class="navMenu">
+      <ul className="navMenu">
         <li>
-          <link to="/home">Home</link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <link to="/About">About</link>
+          <Link to="/Chicago">About</Link>
         </li>
         <li>
-          <link to="/Menu">Menu</link>
-        </li>
-        <li>
-          <link to="/Reservations">Reservations</link>
-        </li>
-        <li>
-          <link to="/Order Online">Order Online</link>
-        </li>
-        <li>
-          <link to="/Login">Login</link>
+          <Link to="/BookingPage">Reservations</Link>
         </li>
       </ul>
     </>
