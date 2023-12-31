@@ -1,30 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./Layout"; // Import the Layout component
-import Nav from "./Nav";
-import BookPage from "./BookingPage";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
 import Hero from "./CallToAction";
 import Specials from "./Specials";
 import Testimonials from "./CustomersSay";
-import About from "./Chicago";
 import Footer from "./Footer";
+import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { BookPage } from "./components/BookPage";
+
+
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Nav />
-        <Routes>
-          <Route path="/Chicago" element={<About />} />
-          <Route path="/BookingPage" element={<BookPage />} />
-        </Routes>
-      </Layout>
-      <Hero />
-      <Specials />
-      <Testimonials />
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/BookPage" element={<BookPage />} />
+      </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
