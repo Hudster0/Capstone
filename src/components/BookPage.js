@@ -1,8 +1,11 @@
+import { BookForm } from "./BookForm";
 export const BookPage = () => {
   return (
     <>
-      <h1>
-        This is the BookPage.</h1>
+      <div class="bookpage">
+        <h1>DON'T WAIT...<br />RESERVE A SPOT NOW!</h1>
+    <BookForm />
+      </div>
     </>
   );
 }

@@ -18,20 +18,20 @@ body {
 
 /*--------------Navigation Menu Section------------------------------------*/
 .navMenu {
-text-align: right;
-padding:2rem 3rem;
+  text-align: right;
+  padding: 2rem 3rem;
   background-color: #072900;
   color: white;
 }
-.navLink{
+.navLink {
   color: aliceblue;
   padding: 3rem;
   text-decoration: none;
   font-size: 2rem;
   margin-right: 3rem;
 }
-.navLink:hover{
-color: #f0f85a; /* Change color on hover */
+.navLink:hover {
+  color: #f0f85a; /* Change color on hover */
   background-color: #555; /* Change background color on hover */
   transform: scale(1.1); /* Scale up on hover */
   opacity: 0.8; /* Change opacity on hover */
@@ -48,11 +48,11 @@ color: #f0f85a; /* Change color on hover */
 .hero h1 {
   font-size: 5rem;
 }
-.hero h3{
+.hero h3 {
   font-size: 3rem;
 }
 .hero p {
-font-size:2rem;
+  font-size: 2rem;
 }
 .heroInfo {
   display: inline-block;
@@ -87,7 +87,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7rem;
-  margin-right:3rem;
+  margin-right: 3rem;
 }
 
 .container img {
@@ -100,10 +100,10 @@ img {
 
 .card {
   display: grid;
-  justify-content:left;
+  justify-content: left;
   border: solid;
-  gap:1rem;
-  padding:1rem;
+  gap: 1rem;
+  padding: 1rem;
   border-radius: 3%;
 }
 
@@ -120,4 +120,40 @@ img {
   background-color: rgb(120, 136, 91);
   padding: 3rem;
   text-align: center;
+}
+
+/*--------------BookPage Section------------------------------------*/
+.bookpage {
+  display: flex;
+  margin: 7rem;
+  padding-left: 9rem;
+}
+.bookpage h1 {
+  font-size: 4rem;
+  font-family: sans-serif;
+  padding-top: 9rem;
+}
+form {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 9rem 3rem 3rem;
+  margin: auto;
+  margin-bottom: 5%;
+  border-radius: 2rem;
+  background-color: #f0f85a;
+  border: solid;
+  }
+
+input {
+  padding: 1rem;
+  border-radius:1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+select{
+  padding:1rem;
+   border-radius:1rem;
+   text-align: center;
+   font-size: 2rem;
 }
