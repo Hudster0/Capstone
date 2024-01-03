@@ -157,3 +157,13 @@ select{
    text-align: center;
    font-size: 2rem;
 }
+
+.existingBookingSlots{
+  color:red;
+  padding: 2%;
+}
+
+.availableBookingSlots{
+  color: blue;
+  padding:2%;
+}

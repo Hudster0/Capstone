@@ -1,21 +1,55 @@
-import React, { useState } from 'react';
-
-export const BookForm = () => {
-  // State variables for form inputs
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('17:00');
-  const [guests, setGuests] = useState(1);
-  const [occasion, setOccasion] = useState('Birthday');
-
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log('Reservation submitted:', { date, time, guests, occasion });
+import React, { useState, useReducer } from "react";
+import { fetchAPI,submitAPI } from "./global.js";
+// Define reducer function
+const timesReducer = (state, action) => {
+  switch (action.type) {
+    case "UPDATE_TIMES":
+      // Implement logic to update times based on the selected date
+      return action.times; // For now, return the same times regardless of the date
+    default:
+      return state;
   }
+};
+
+const BookForm = ({ initializeTimes, setAvailableSlots }) => {
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [guests, setGuests] = useState(1);
+  const [occasion, setOccasion] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const formData = {
+        date,
+        time,
+        guests,
+        occasion,
+      };
+
+      const isSubmitted = await window.submitAPI(formData);
+
+      if (isSubmitted) {
+        // Handle successful submission
+      } else {
+        // Handle submission failure
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Handle error as needed
+    }
+  };
+
+  const handleDateChange = (event) => {
+    const newDate = event.target.value;
+    initializeTimes(newDate); // Call initializeTimes directly
+    setDate(newDate);
+  };
+
   return (
     <form
-      style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
+      style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
       onSubmit={handleSubmit}
     >
       <label htmlFor="res-date">Choose date</label>
@@ -63,5 +97,7 @@ export const BookForm = () => {
 
       <input type="submit" value="Make Your Reservation" />
     </form>
-  )
+  );
 };
+
+export default BookForm;

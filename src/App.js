@@ -5,9 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./Footer";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import { BookPage } from "./components/BookPage";
-
-
+import BookPage from "./components/BookPage";
 
 function App() {
   return (
